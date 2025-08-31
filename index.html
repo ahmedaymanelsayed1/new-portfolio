@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Elhilaly | Engineer</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="nav" id="navbar">
+        <div class="nav-bar">
+            <img src="images/logo (1).png" alt="Logo">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header" id="home">
+        <h1>Hello, I'm Ahmed Elhilaly</h1>
+        <p>Electronics & Robotics Engineer passionate about innovative projects</p>
+        <div class="cta-container">
+            <a href="#portfolio" class="cta-button">View My Work</a>
+            <a href="#contact" class="cta-button secondary">Contact Me</a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about" id="about">
+        <h2 class="section-heading">About Me</h2>
+        <p class="section-subheading">Get to know me better</p>
+
+        <div class="about-content">
+            <div class="image">
+                <img src="images/me.jpg" alt="Ahmed Elhilaly">
+            </div>
+
+            <div class="text">
+                <p>
+                    I am an electronics and robotics engineer with a passion for creating innovative technological solutions. 
+                    With over 5 years of experience, I have worked on various projects ranging from robotic arms to smart energy systems.
+                </p>
+                <hr>
+                <p>
+                    My expertise includes embedded systems, computer vision, IoT solutions, and renewable energy systems. 
+                    I enjoy turning complex problems into simple, beautiful, and intuitive solutions.
+                </p>
+                <p>
+                    When not working, you can find me hiking, reading about new technologies, or experimenting with new electronics projects.
+                </p>
+            </div>
+        </div>
+    </div>
+
+<!-- Portfolio Section -->
+    <div class="portfolio" id="portfolio">
+        <h2 class="special-heading">My Projects</h2>
+        <p>Check out my recent work</p>
+
+        <div class="portfolio-content">
+            <div class="card">
+                <img src="images/arm.jpg" alt="Robotic Arm">
+                <div class="info">
+                    <h3>Camera-Controlled Robotic Arm</h3>
+                    <p>A sophisticated robotic arm that uses laptop camera for object recognition and precise manipulation</p>
+                    <button class="toggle-details" onclick="toggleDetails('project1')">View Details</button>
+                    <div class="project-details" id="project1">
+                        <h4>Project Overview</h4>
+                        <p>This project is a 6-DOF robotic arm with servo motors that can be controlled through hand gestures detected by a laptop camera, using Python and Arduino.</p>
+                        <h4>Technical Details</h4>
+                        <ul>
+                            <li>6 × MG995 Servo Motors for joint movements</li>
+                            <li>Arduino Uno microcontroller for servo control</li>
+                            <li>Python with OpenCV for hand gesture recognition</li>
+                            <li>Real-time control via computer vision</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/smartt.jpg" alt="Smart Greenhouse">
+                <div class="info">
+                    <h3>Smart Greenhouse with IoT</h3>
+                    <p>Automated farming system with environmental monitoring and renewable energy</p>
+                    <button class="toggle-details" onclick="toggleDetails('project2')">View Details</button>
+                    <div class="project-details" id="project2">
+                        <h4>Project Overview</h4>
+                        <p>The Smart Greenhouse is an automated farming system that integrates renewable energy, environmental monitoring, and IoT technology.</p>
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Solar-powered with dual-servo sun tracking</li>
+                            <li>Automatic irrigation based on soil conditions</li>
+                            <li>Fire and smoke detection with alarm alerts</li>
+                            <li>Mobile app for remote monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/cola.jpg" alt="Cola Machine">
+                <div class="info">
+                    <h3>Cola Machine</h3>
+                    <p>Automated vending machine that dispenses 7 different types of drinks</p>
+                    <button class="toggle-details" onclick="toggleDetails('project3')">View Details</button>
+                    <div class="project-details" id="project3">
+                        <h4>Project Overview</h4>
+                        <p>The Cola Machine is an automated vending machine prototype designed to dispense 7 different types of drinks.</p>
+                        <h4>Technical Components</h4>
+                        <ul>
+                            <li>20x4 LCD with I2C module for user interface</li>
+                            <li>7 relays for motor/pump control</li>
+                            <li>Stepper motor with A4988 driver for dispensing</li>
+                            <li>12V power supply for reliable operation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/carr.jpg" alt="Formula Car">
+                <div class="info">
+                    <h3>Mini Formula Car</h3>
+                    <p>Design and implementation of a mini formula car with high performance</p>
+                    <button class="toggle-details" onclick="toggleDetails('project4')">View Details</button>
+                    <div class="project-details" id="project4">
+                        <h4>Project Overview</h4>
+                        <p>This project involved designing and building a mini formula-style car with advanced control systems and high performance capabilities.</p>
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Lightweight chassis design</li>
+                            <li>Precision steering mechanism</li>
+                            <li>High-torque motor system</li>
+                            <li>Wireless control capabilities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/solar.jpg" alt="Solar Tracker">
+                <div class="info">
+                    <h3>Sun-Tracking Solar Cell</h3>
+                    <p>Smart solar cell system that tracks sun movement for maximum efficiency</p>
+                    <button class="toggle-details" onclick="toggleDetails('project5')">View Details</button>
+                    <div class="project-details" id="project5">
+                        <h4>Project Overview</h4>
+                        <p>This project involves creating a solar panel system that automatically tracks the sun's movement to maximize energy absorption throughout the day.</p>
+                        <h4>Technical Details</h4>
+                        <ul>
+                            <li>Dual-axis solar tracking system</li>
+                            <li>Light sensors for sun position detection</li>
+                            <li>Microcontroller-based control system</li>
+                            <li>Real-time positioning adjustments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features" id="features">
+        <div class="about-card">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Innovative Design</h3>
+            <p>I provide creative innovative solutions that meet your needs and exceed expectations</p>
+        </div>
+        <div class="about-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Precise Implementation</h3>
+            <p>I pay attention to the smallest technical details to ensure high quality and performance of projects</p>
+        </div>
+        <div class="about-card">
+            <i class="fa-solid fa-gears"></i>
+            <h3>Comprehensive Support</h3>
+            <p>I provide comprehensive support to ensure the continuity of projects with high efficiency</p>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+        <h2 class="section-heading">My Services</h2>
+        <p class="section-subheading">I offer a range of specialized technical services in electronics and programming</p>
+
+        <div class="services-box">
+            <div class="services-card">
+                <i class="fa-solid fa-robot"></i>
+                <h3>Robotics Design</h3>
+                <p>Design and implementation of smart robotic systems for multiple purposes</p>
+            </div>
+
+            <div class="services-card">
+                <i class="fa-solid fa-microchip"></i>
+                <h3>Electronic Control Systems</h3>
+                <p>Development of custom electronic control systems for various applications</p>
+            </div>
+
+            <div class="services-card">
+                <i class="fa-solid fa-solar-panel"></i>
+                <h3>Solar Energy Systems</h3>
+                <p>Design of smart solar energy systems with sun tracking capabilities</p>
+            </div>
+
+            <div class="services-card">
+                <i class="fa-solid fa-car"></i>
+                <h3>Smart Vehicles</h3>
+                <p>Design and implementation of smart remote-controlled or self-driving vehicles</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact" id="contact">
+        <h2 class="section-heading">Contact Me</h2>
+        <p class="section-subheading">I'm here to bring your ideas to life</p>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><i class="fas fa-envelope"></i> ahmed.elhilaly@example.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+                
+                <div class="social">
+                    <p>Follow me on social media:</p>
+                    <div class="icons">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2023 <span>Ahmed Elhilaly</span> All Rights Reserved
+    </div>
+
+    <script>
+        // Toggle project details
+        function toggleDetails(projectId) {
+            const details = document.getElementById(projectId);
+            details.classList.toggle('show');
+            
+            const button = details.previousElementSibling;
+            if (details.classList.contains('show')) {
+                button.textContent = 'Hide Details';
+            } else {
+                button.textContent = 'View Details';
+            }
+        }
+        
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            // Active nav link
+            const sections = document.querySelectorAll('div[id]');
+            const navLinks = document.querySelectorAll('.nav-bar ul li a');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
